@@ -1,0 +1,116 @@
+// importing vendor material
+@import "_vendor.scss";
+
+@mixin rotations($class, $bg, $rotate, $culm: "true"){
+	.chart .#{$class} {
+		@if not($culm == "true") {
+			-webkit-transform: rotate($culm);
+			transform: rotate($culm);
+		}
+		.segment {
+			-webkit-transform: rotate($rotate);
+			transform: rotate($rotate);
+			background: $bg;
+		}
+	}
+}
+
+%piechart {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+}
+
+body {
+	font-family: "Varela Round", sans-serif;
+	@media (min-width:400px){
+		width: 80%;
+		margin: 10px auto;
+	}
+	@media (max-width:399px){
+		padding: 10px 7px;
+	}
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-family: "Bree Serif", serif;
+		text-align: center;
+	}
+}
+
+.key table {
+	width: 100%;
+	.nadal {
+		background: #ff009a;
+	}
+	.federer {
+		background: #ff6500;
+	}
+	.djoko {
+		background: #00ff65;
+	}
+	.murray {
+		background: #009aff;
+	}
+	.aggasi {
+		background: #001bff;
+	}
+	.delpo {
+		background: #ff001b;
+	}
+	.ferrero {
+		background: #ffe500;
+	}
+	.gaudio {
+		background: #6500ff;
+	}
+	.roddick {
+		background: #00cc00;
+	}
+	.safin {
+		background: #ab801b;
+	}
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+	&:hover {
+		color: darken(blue, 20%);
+		text-decoration: underline;
+	}
+}
+
+footer {
+	font-size: 80%;
+}
+
+.chart {
+	position: relative;
+	width: 300px;
+	margin: auto;
+}
+
+.segment {
+	@extend %piechart;
+	border-radius: 150px;
+	clip: rect(0, 150px, 300px, 0);
+}
+
+.hold {
+	@extend %piechart;
+	clip: rect(0, 300px, 300px, 150px);
+	cursor: pointer;
+}
+
+@include rotations(federer, #ff6500, 139.090909deg);
+@include rotations(nadal, #ff009a, 106.363636deg, 139.090909deg);
+@include rotations(djoko, #00ff65, 49.090909deg, 245.454545deg);
+@include rotations(murray, #009aff, 16.363636deg, 294.545455deg);
+@include rotations(aggasi, #001bff, 8.181818deg, 310.909091deg);
+@include rotations(delpo, #ff001b, 8.181818deg, 319.090909deg);
+@include rotations(ferrero, #ffe500, 8.181818deg, 327.272727deg);
+@include rotations(gaudio, #6500ff, 8.181818deg, 335.454545deg);
+@include rotations(roddick, #00cc00, 8.181818deg, 343.636364deg);
+@include rotations(safin, #ab801b, 8.181818deg, 351.919192deg);

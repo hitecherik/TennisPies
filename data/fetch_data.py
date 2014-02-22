@@ -75,7 +75,7 @@ def write_to_file(filename):
 		f.write(champ + ": ")
 		for year in champions[champ]:
 			f.write(year + ", ")
-		f.write("\n")
+		f.write("Total: " + str(len(champions[champ]))  + "\n")
 	
 	f.close()
 
