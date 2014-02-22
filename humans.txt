@@ -7,9 +7,10 @@
 
 # THANKS
 
-    <name>
+    Atomic Noggin (http://www.htek.tk/10)
+    Wikipedia (http://www.htek.tk/11)
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+    HTML5, CSS3, Python
     Normalize.css, jQuery, Modernizr, HTML5 Boilerplate, Pure CSS, Unsemantic CSS Framework
