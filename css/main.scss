@@ -5,11 +5,13 @@
 	.chart .#{$class} {
 		@if not($culm == "true") {
 			-webkit-transform: rotate($culm);
+			-ms-transform: rotate($culm);
 			transform: rotate($culm);
 		}
 		.segment {
 			-webkit-transform: rotate($rotate);
-			transform: rotate($rotate);
+			-ms-transform: rotate($rotate);
+			transform: rotate($culm);
 			background: $bg;
 		}
 	}
@@ -84,6 +86,16 @@ a {
 
 footer {
 	font-size: 80%;
+}
+
+.csstransforms-warning {
+	.no-csstransforms & {
+		@extend .browsehappy;
+		display: block;	
+	}
+	.csstransforms & {
+		@extend .hidden;
+	}
 }
 
 .chart {

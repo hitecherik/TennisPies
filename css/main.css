@@ -634,7 +634,7 @@ textarea {
    Browse Happy prompt
    ========================================================================== */
 /* line 613, _vendor.scss */
-.browsehappy {
+.browsehappy, .no-csstransforms .csstransforms-warning {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
@@ -648,7 +648,7 @@ textarea {
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 /* line 628, _vendor.scss */
-.hidden {
+.hidden, .csstransforms .csstransforms-warning {
   display: none !important;
   visibility: hidden;
 }
@@ -2119,258 +2119,282 @@ https://github.com/yui/pure/blob/master/LICENSE.md
     width: 100%;
   }
 }
-/* line 18, main.scss */
+/* line 20, main.scss */
 .segment, .hold {
   position: absolute;
   width: 300px;
   height: 300px;
 }
 
-/* line 24, main.scss */
+/* line 26, main.scss */
 body {
   font-family: "Varela Round", sans-serif;
 }
 @media (min-width: 400px) {
-  /* line 24, main.scss */
+  /* line 26, main.scss */
   body {
     width: 80%;
     margin: 10px auto;
   }
 }
 @media (max-width: 399px) {
-  /* line 24, main.scss */
+  /* line 26, main.scss */
   body {
     padding: 10px 7px;
   }
 }
 
-/* line 36, main.scss */
+/* line 38, main.scss */
 h1 {
   font-family: "Bree Serif", serif;
   text-align: center;
 }
 
-/* line 36, main.scss */
+/* line 38, main.scss */
 h2 {
   font-family: "Bree Serif", serif;
   text-align: center;
 }
 
-/* line 36, main.scss */
+/* line 38, main.scss */
 h3 {
   font-family: "Bree Serif", serif;
   text-align: center;
 }
 
-/* line 36, main.scss */
+/* line 38, main.scss */
 h4 {
   font-family: "Bree Serif", serif;
   text-align: center;
 }
 
-/* line 36, main.scss */
+/* line 38, main.scss */
 h5 {
   font-family: "Bree Serif", serif;
   text-align: center;
 }
 
-/* line 36, main.scss */
+/* line 38, main.scss */
 h6 {
   font-family: "Bree Serif", serif;
   text-align: center;
 }
 
-/* line 42, main.scss */
+/* line 44, main.scss */
 .key table {
   width: 100%;
 }
-/* line 44, main.scss */
+/* line 46, main.scss */
 .key table .nadal {
   background: #ff009a;
 }
-/* line 47, main.scss */
+/* line 49, main.scss */
 .key table .federer {
   background: #ff6500;
 }
-/* line 50, main.scss */
+/* line 52, main.scss */
 .key table .djoko {
   background: #00ff65;
 }
-/* line 53, main.scss */
+/* line 55, main.scss */
 .key table .murray {
   background: #009aff;
 }
-/* line 56, main.scss */
+/* line 58, main.scss */
 .key table .aggasi {
   background: #001bff;
 }
-/* line 59, main.scss */
+/* line 61, main.scss */
 .key table .delpo {
   background: #ff001b;
 }
-/* line 62, main.scss */
+/* line 64, main.scss */
 .key table .ferrero {
   background: #ffe500;
 }
-/* line 65, main.scss */
+/* line 67, main.scss */
 .key table .gaudio {
   background: #6500ff;
 }
-/* line 68, main.scss */
+/* line 70, main.scss */
 .key table .roddick {
   background: #00cc00;
 }
-/* line 71, main.scss */
+/* line 73, main.scss */
 .key table .safin {
   background: #ab801b;
 }
 
-/* line 76, main.scss */
+/* line 78, main.scss */
 a {
   color: blue;
   text-decoration: none;
 }
-/* line 79, main.scss */
+/* line 81, main.scss */
 a:hover {
   color: #000099;
   text-decoration: underline;
 }
 
-/* line 85, main.scss */
+/* line 87, main.scss */
 footer {
   font-size: 80%;
 }
 
-/* line 89, main.scss */
+/* line 92, main.scss */
+.no-csstransforms .csstransforms-warning {
+  display: block;
+}
+
+/* line 101, main.scss */
 .chart {
   position: relative;
   width: 300px;
   margin: auto;
 }
 
-/* line 95, main.scss */
+/* line 107, main.scss */
 .segment {
   border-radius: 150px;
   clip: rect(0, 150px, 300px, 0);
 }
 
-/* line 101, main.scss */
+/* line 113, main.scss */
 .hold {
   clip: rect(0, 300px, 300px, 150px);
   cursor: pointer;
 }
 
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .federer .segment {
   -webkit-transform: rotate(139.09091deg);
-  transform: rotate(139.09091deg);
+  -ms-transform: rotate(139.09091deg);
+  transform: rotate("true");
   background: #ff6500;
 }
 
 /* line 5, main.scss */
 .chart .nadal {
   -webkit-transform: rotate(139.09091deg);
+  -ms-transform: rotate(139.09091deg);
   transform: rotate(139.09091deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .nadal .segment {
   -webkit-transform: rotate(106.36364deg);
-  transform: rotate(106.36364deg);
+  -ms-transform: rotate(106.36364deg);
+  transform: rotate(139.09091deg);
   background: #ff009a;
 }
 
 /* line 5, main.scss */
 .chart .djoko {
   -webkit-transform: rotate(245.45455deg);
+  -ms-transform: rotate(245.45455deg);
   transform: rotate(245.45455deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .djoko .segment {
   -webkit-transform: rotate(49.09091deg);
-  transform: rotate(49.09091deg);
+  -ms-transform: rotate(49.09091deg);
+  transform: rotate(245.45455deg);
   background: #00ff65;
 }
 
 /* line 5, main.scss */
 .chart .murray {
   -webkit-transform: rotate(294.54546deg);
+  -ms-transform: rotate(294.54546deg);
   transform: rotate(294.54546deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .murray .segment {
   -webkit-transform: rotate(16.36364deg);
-  transform: rotate(16.36364deg);
+  -ms-transform: rotate(16.36364deg);
+  transform: rotate(294.54546deg);
   background: #009aff;
 }
 
 /* line 5, main.scss */
 .chart .aggasi {
   -webkit-transform: rotate(310.90909deg);
+  -ms-transform: rotate(310.90909deg);
   transform: rotate(310.90909deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .aggasi .segment {
   -webkit-transform: rotate(8.18182deg);
-  transform: rotate(8.18182deg);
+  -ms-transform: rotate(8.18182deg);
+  transform: rotate(310.90909deg);
   background: #001bff;
 }
 
 /* line 5, main.scss */
 .chart .delpo {
   -webkit-transform: rotate(319.09091deg);
+  -ms-transform: rotate(319.09091deg);
   transform: rotate(319.09091deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .delpo .segment {
   -webkit-transform: rotate(8.18182deg);
-  transform: rotate(8.18182deg);
+  -ms-transform: rotate(8.18182deg);
+  transform: rotate(319.09091deg);
   background: #ff001b;
 }
 
 /* line 5, main.scss */
 .chart .ferrero {
   -webkit-transform: rotate(327.27273deg);
+  -ms-transform: rotate(327.27273deg);
   transform: rotate(327.27273deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .ferrero .segment {
   -webkit-transform: rotate(8.18182deg);
-  transform: rotate(8.18182deg);
+  -ms-transform: rotate(8.18182deg);
+  transform: rotate(327.27273deg);
   background: #ffe500;
 }
 
 /* line 5, main.scss */
 .chart .gaudio {
   -webkit-transform: rotate(335.45455deg);
+  -ms-transform: rotate(335.45455deg);
   transform: rotate(335.45455deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .gaudio .segment {
   -webkit-transform: rotate(8.18182deg);
-  transform: rotate(8.18182deg);
+  -ms-transform: rotate(8.18182deg);
+  transform: rotate(335.45455deg);
   background: #6500ff;
 }
 
 /* line 5, main.scss */
 .chart .roddick {
   -webkit-transform: rotate(343.63636deg);
+  -ms-transform: rotate(343.63636deg);
   transform: rotate(343.63636deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .roddick .segment {
   -webkit-transform: rotate(8.18182deg);
-  transform: rotate(8.18182deg);
+  -ms-transform: rotate(8.18182deg);
+  transform: rotate(343.63636deg);
   background: #00cc00;
 }
 
 /* line 5, main.scss */
 .chart .safin {
   -webkit-transform: rotate(351.91919deg);
+  -ms-transform: rotate(351.91919deg);
   transform: rotate(351.91919deg);
 }
-/* line 10, main.scss */
+/* line 11, main.scss */
 .chart .safin .segment {
   -webkit-transform: rotate(8.18182deg);
-  transform: rotate(8.18182deg);
+  -ms-transform: rotate(8.18182deg);
+  transform: rotate(351.91919deg);
   background: #ab801b;
 }
