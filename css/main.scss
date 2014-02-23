@@ -11,7 +11,7 @@
 		.segment {
 			-webkit-transform: rotate($rotate);
 			-ms-transform: rotate($rotate);
-			transform: rotate($culm);
+			transform: rotate($rotate);
 			background: $bg;
 		}
 	}

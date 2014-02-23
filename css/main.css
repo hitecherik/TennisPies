@@ -2269,7 +2269,7 @@ footer {
 .chart .federer .segment {
   -webkit-transform: rotate(139.09091deg);
   -ms-transform: rotate(139.09091deg);
-  transform: rotate("true");
+  transform: rotate(139.09091deg);
   background: #ff6500;
 }
 
@@ -2283,7 +2283,7 @@ footer {
 .chart .nadal .segment {
   -webkit-transform: rotate(106.36364deg);
   -ms-transform: rotate(106.36364deg);
-  transform: rotate(139.09091deg);
+  transform: rotate(106.36364deg);
   background: #ff009a;
 }
 
@@ -2297,7 +2297,7 @@ footer {
 .chart .djoko .segment {
   -webkit-transform: rotate(49.09091deg);
   -ms-transform: rotate(49.09091deg);
-  transform: rotate(245.45455deg);
+  transform: rotate(49.09091deg);
   background: #00ff65;
 }
 
@@ -2311,7 +2311,7 @@ footer {
 .chart .murray .segment {
   -webkit-transform: rotate(16.36364deg);
   -ms-transform: rotate(16.36364deg);
-  transform: rotate(294.54546deg);
+  transform: rotate(16.36364deg);
   background: #009aff;
 }
 
@@ -2325,7 +2325,7 @@ footer {
 .chart .aggasi .segment {
   -webkit-transform: rotate(8.18182deg);
   -ms-transform: rotate(8.18182deg);
-  transform: rotate(310.90909deg);
+  transform: rotate(8.18182deg);
   background: #001bff;
 }
 
@@ -2339,7 +2339,7 @@ footer {
 .chart .delpo .segment {
   -webkit-transform: rotate(8.18182deg);
   -ms-transform: rotate(8.18182deg);
-  transform: rotate(319.09091deg);
+  transform: rotate(8.18182deg);
   background: #ff001b;
 }
 
@@ -2353,7 +2353,7 @@ footer {
 .chart .ferrero .segment {
   -webkit-transform: rotate(8.18182deg);
   -ms-transform: rotate(8.18182deg);
-  transform: rotate(327.27273deg);
+  transform: rotate(8.18182deg);
   background: #ffe500;
 }
 
@@ -2367,7 +2367,7 @@ footer {
 .chart .gaudio .segment {
   -webkit-transform: rotate(8.18182deg);
   -ms-transform: rotate(8.18182deg);
-  transform: rotate(335.45455deg);
+  transform: rotate(8.18182deg);
   background: #6500ff;
 }
 
@@ -2381,7 +2381,7 @@ footer {
 .chart .roddick .segment {
   -webkit-transform: rotate(8.18182deg);
   -ms-transform: rotate(8.18182deg);
-  transform: rotate(343.63636deg);
+  transform: rotate(8.18182deg);
   background: #00cc00;
 }
 
@@ -2395,6 +2395,6 @@ footer {
 .chart .safin .segment {
   -webkit-transform: rotate(8.18182deg);
   -ms-transform: rotate(8.18182deg);
-  transform: rotate(351.91919deg);
+  transform: rotate(8.18182deg);
   background: #ab801b;
 }
